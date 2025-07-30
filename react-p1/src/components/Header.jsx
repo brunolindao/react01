@@ -1,11 +1,8 @@
-function Header() {
-    const meuNome ='bruno'
-    let frase = `${meuNome} isso`
+function Header(props) {
+   
     return (
         <header>
-            <p>
-                {frase}
-            </p>
+          {props.children}
         </header>
     );
 }
